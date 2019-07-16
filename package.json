@@ -1,0 +1,26 @@
+{
+  "name": "news-scraper",
+  "version": "1.0.0",
+  "description": "This is a coding bootcamp assignment to create a web app that lets users view and leave comments on the latest news. I did not write any of the articles; instead, I used Mongoose and Cheerio to scrape news from another site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctashton/News-Scraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctashton/News-Scraper/issues"
+  },
+  "homepage": "https://github.com/ctashton/News-Scraper#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mongoose": "^5.6.4"
+  }
+}
