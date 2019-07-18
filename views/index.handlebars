@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Free Code Camp News</a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="/">Home</a>
+      <a class="nav-item nav-link" href="/saved">Saved articles</a>
+      <a class="btn btn-danger scrape-new flex-row-reverse">Get new articles</a>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid text-center">
+  <h1 class="display-4">FreeCodeCamp News Updates!</h1>
+  <p class="lead">Made with MongoDB & Handlebars</p>
+</div>
+
+<div class="container article-container">
+  <h3>Articles</h3>
+  {{#each articles}}
+    <div class="card bg-light flex-row flex-wrap mb-3">
+        <div class="card-header border-0">
+            <img style="max-width: 200px" src="{{image}}">
+        </div>
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <a href="{{link}}" class="card-link" target="_blank">View article</a>
+        <a data-articleId="{{_id}}" class="btn btn-primary save-btn">Save article</a>
+      </div>
+    </div>
+  {{/each}}
+</div>
